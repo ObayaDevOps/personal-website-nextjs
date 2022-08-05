@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-
+import Link from 'next/link';
+import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts'
 
 export default function Home({ allPostsData }) {
@@ -9,6 +10,7 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+
       </Head>
       <section className={utilStyles.headingMd}>
         <p>'I wonder what this does.'</p>
@@ -47,10 +49,10 @@ export default function Home({ allPostsData }) {
         </p>
         <p>
            I worked in Electronic Bond Trading,
-          connecting CS to a new Brokerage using FIX, then moved to a Big-Data Team, doing real-time stream processing and dashboarding (Java, SpringBoot, React, Kafka, Cassandra) at terabytes-per-second scale.
+          connecting CS to a new Brokerage using FIX, then moved to a Big-Data Team, doing real-time stream processing and dashboarding (Java, SpringBoot, React, Kafka, Cassandra) at terabytes-per-second scale for FX Risk Data.
         </p>
         <p>
-          After a few years I moved to another CS Team, Equity Derivates IT. Working in Scala, a functional language, on the Real-time pricing, 
+          After a few years I moved to another CS Team, Equity Derivatives IT. Working in Scala, a functional language, on the Real-time pricing, 
              taking in data from markets and risk engines to adjust prices for each derivative.
         </p>
         <p>
@@ -62,21 +64,23 @@ export default function Home({ allPostsData }) {
         </p> */}
 
       </section>
-{/* 
+
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog Articles</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
+            <Link href={`/posts/${id}`}>
+              <a>{title}</a>
+            </Link>
+            <br />
+            <small className={utilStyles.lightText}>
+              <Date dateString={date} />
+            </small>
+          </li>
           ))}
         </ul>
-      </section> */}
+      </section>
 
     </Layout>
   )
