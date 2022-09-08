@@ -13,18 +13,19 @@ export default function Home({ allPostsData }) {
 
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>'I wonder what this does.'</p>
+
+        <p>
+          Tech Lead and Code Artist at <a href="https://www.afropocene.com/"> Afropocene StudioLab</a>
+        </p>
 
         <p>
             Founder and Beekeeper at  <a href="http://humble-beeing.com/"> Humble Beeing </a>
         </p>
 
-        <p>
-          Code Artist and Tech Lead at <a href="https://www.afropocene.com/"> Afropocene StudioLab</a>
-        </p>
+
 
         <p>
-          I <a href="https://github.com/ObayaDevOps">build </a> random crypto-related trading bots - Optimus Dime, ArbiTriangle, F.A.C.K, TopsyTurvsy
+          I <a href="https://github.com/ObayaDevOps">build </a> random crypto-related trading bots - Optimus Dime, ArbiTriangle, Ftx-Auto-Compounding-Kit(FAcK), TopsyTurvsy
         </p>
 
         <p>
