@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
 
 
         <p>
-          I <a href="https://github.com/ObayaDevOps">build </a> random crypto-related trading bots - Optimus Dime, ArbiTriangle, Ftx-Auto-Compounding-Kit(FAcK), TopsyTurvsy
+          I <a href="https://github.com/ObayaDevOps">build </a> random crypto-related trading bots - Optimus Dime, <a href="https://github.com/ObayaDevOps/Arbitriangle">ArbiTriangle </a>, <a href="https://github.com/ObayaDevOps/MarginLendingAutoCompounder">Ftx-Auto-Compounding-Kit(FAcK) </a> , TopsyTurvsy
         </p>
 
         <p>
@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
           connecting CS to a new Brokerage using FIX, then moved to a Big-Data Team, doing real-time stream processing and dashboarding (Java, SpringBoot, React, Kafka, Cassandra) at terabytes-per-second scale for FX Risk Data.
         </p>
         <p>
-          After a few years I moved to another CS Team, Equity Derivatives IT. Working in Scala, a functional language, on the Real-time pricing, 
+          After a few years I got promoted to Assistant Vice President and moved to another CS Team, Equity Derivatives IT. Working in Scala, a functional language, on the Real-time pricing, 
              taking in data from markets and risk engines to adjust prices for each derivative.
         </p>
         <p>
